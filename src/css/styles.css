@@ -1,0 +1,253 @@
+
+/* Colores y tipo de letra */
+:root {
+    --colorTexto: #070e58;
+    --colorOfertaOjoIzquierdo: rgb(14,255,223);
+    --colorOfertaLabios: rgb(155,5,16);
+    --colorOfertaOjoDerecho: rgb(255,240,0);
+    --fuente: sans-serif;
+ }
+
+ *,
+ *:before,
+ *:after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ header{
+    background-image: url(../img/fondo-principal.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+header li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+
+/* Reglas para el menú de navegación */
+
+footer{
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+body {
+    font-family: var(--fuente);
+    font-weight: 300;
+    color: var(--colorTexto);
+    display: flex;
+    flex-direction: column;
+}
+
+body p{
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul {
+    line-height: 2;
+    text-align: center;
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    text-transform: uppercase;
+}
+
+nav ul a {
+    color: white;
+    font-size: large;
+
+}
+
+nav ul a.primero:hover{
+    color: var(--colorOfertaOjoIzquierdo);
+
+}
+
+nav ul a.segundo:hover{
+    color: var(--colorOfertaLabios);
+
+}
+
+nav ul a.tercero:hover{
+    color: var(--colorOfertaOjoDerecho);
+
+}
+
+nav li{
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+ .headerIndex{
+    background: none;
+}
+
+.headerIndex nav {
+    border-bottom: 3px solid white;
+}
+
+.headerIndex nav li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+
+.bodyIndex{
+    background-image: url(../img/fondo-principal.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bodyIndex p{
+    font-weight: 900;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+p#texto:hover {
+    color: var(--colorOfertaOjoIzquierdo);
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexFooter{
+    text-align: center;
+    margin-top: 3rem;
+    background: none;
+}
+
+footer p {
+    color: var(--colorTexto);
+    font-weight: 500;
+    text-align: center;
+    font-size: small;
+    
+}
+
+.resumen{
+    width: 80%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+iframe{
+    border: 0;
+    max-width: 100%;
+}
+
+footer.indexFooter p {
+    color: rgb(255,255,255);
+    font-weight: 500;
+    text-align: center;
+    font-size: small;
+    
+}
+
+main.categoria > div {
+    display: flex;
+    flex-direction: column;
+}
+
+dd{
+    margin: 1rem auto;
+    padding-left: 1rem;
+    border-left: 3px solid var(--colorOfertaOjoDerecho);
+}
+
+dd p{
+    padding-bottom: 0;
+}
+
+dt{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--colorOfertaLabios);
+}
+
+dl{
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+article blockquote {
+    border-left: 3px solid;
+    border-color: var(--colorOfertaOjoIzquierdo);
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: inline-grid;
+    margin-bottom: 2rem;;
+}
+
+article blockquote q {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    quotes: none;
+}
+
+article blockquote cite {
+    font-size: 0.9rem;
+}
+
+ul.enlaces {
+    list-style: disc;
+    font-size: 90%;
+    line-height: 175%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
