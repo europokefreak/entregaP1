@@ -2,6 +2,7 @@
 /* Colores y tipo de letra */
 :root {
     --colorTexto: #070e58;
+    --colorMenu: rgba(7, 14, 88, 0.7);
     --colorOfertaOjoIzquierdo: rgb(14,255,223);
     --colorOfertaLabios: rgb(155,5,16);
     --colorOfertaOjoDerecho: rgb(255,240,0);
@@ -25,14 +26,11 @@
     margin-bottom: 2rem;
 }
 
-header li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-}
-
 footer{
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center
 }
 
 h1 {
@@ -55,6 +53,11 @@ body p{
     padding-bottom: 1rem;
 }
 
+header nav a img {
+    width: 10rem;
+    height: 10rem;
+}
+
 nav {
     margin-left: auto;
     margin-right: auto;
@@ -64,6 +67,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
     
 }
 nav ul {
@@ -73,6 +78,7 @@ nav ul {
     text-align: right;
     display: flex;
     text-transform: uppercase;
+    background-color: var(--colorMenu);
 }
 
 nav ul a {
@@ -97,8 +103,7 @@ nav ul a.tercero:hover{
 }
 
 nav li{
-    display: inline-block;
-    padding-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
  .headerIndex{
@@ -107,6 +112,10 @@ nav li{
 
 .headerIndex nav {
     border-bottom: 3px solid white;
+}
+
+.headerIndex nav ul {
+    background-color: black;
 }
 
 .headerIndex nav li{
@@ -143,6 +152,15 @@ p#texto:hover {
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .indexFooter{
@@ -156,7 +174,14 @@ footer p {
     font-weight: 500;
     text-align: center;
     font-size: small;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     
+}
+
+footer a img {
+    width: 10rem;
+    height: 10rem;
 }
 
 .resumen{
@@ -248,3 +273,37 @@ ul.enlaces {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
   }
+
+  .rayo {
+    width: 30rem;
+    height: 10rem;
+    /*clip-path: polygon(50% 0%, 60% 20%, 40% 20%, 50% 40%, 30% 40%, 40% 60%, 20% 60%, 50% 100%, 40% 70%, 60% 70%, 50% 50%, 70% 50%, 60% 30%, 80% 30%);*/
+    clip-path: polygon(0% 50%, 20% 60%, 20% 40%, 40% 50%, 40% 30%, 60% 40%, 60% 20%, 100% 50%, 70% 40%, 70% 60%, 50% 50%, 50% 70%, 30% 60%, 30% 80%);
+    background: linear-gradient(to right, var(--colorOfertaOjoIzquierdo), var(--colorOfertaOjoDerecho));
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    animation: appearDisappear 4s infinite;
+}
+
+@keyframes appearDisappear {
+    0%,
+    100% {
+        clip-path: circle(0% at 50% 50%);
+    }
+    50% {
+        clip-path: circle(75% at 50% 50%);
+    }
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
