@@ -17,6 +17,7 @@
     "sharp": "^0.31.3"
   },
   "dependencies": {
-    "howler": "^2.2.4"
+    "howler": "^2.2.4",
+    "lite-youtube-embed": "^0.3.2"
   }
 }

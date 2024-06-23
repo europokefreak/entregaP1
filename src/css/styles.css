@@ -18,7 +18,7 @@
  }
 
  header{
-    background-image: url(../img/fondo-principal.png);
+    background-image: url(../img/fondo-principal.webp);
     background-position: center;
     background-size: cover;
     padding-top: 0.5rem;
@@ -128,7 +128,7 @@ nav li{
 }
 
 .bodyIndex{
-    background-image: url(../img/fondo-principal.png);
+    background-image: url(../img/fondo-principal.webp);
     background-size: cover;
     background-position: center;
     text-align: center;
